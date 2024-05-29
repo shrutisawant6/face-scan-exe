@@ -1,4 +1,3 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 const video = document.getElementById("video");
 
 Promise.all([
@@ -22,9 +21,7 @@ window.addEventListener("orientationchange", function () {
 });
 
 video.addEventListener("play", () => {
-
     setInterval(async () => {
-
         var dimensions = SetCanvas("portrait");
         const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions())
             .withFaceLandmarks()
@@ -43,7 +40,7 @@ video.addEventListener("play", () => {
             var ageText = age > 1 ? " years old " : " year old ";
             const drawBox = new faceapi.draw.DrawBox(box, { label: age + ageText + detection.gender })
             drawBox.draw(dimensions.canvas)
-        })
+        });
     }, 1000);
 });
 
@@ -53,7 +50,6 @@ function SetCanvas(orientation) {
     if (canvas != undefined) {
         document.body.removeChild(canvas);
     }
-
     canvas = faceapi.createCanvasFromMedia(video);
     document.body.appendChild(canvas);
 
@@ -68,13 +64,11 @@ function SetCanvas(orientation) {
         width: finalWidth,
         height: video.height
     };
-
     faceapi.matchDimensions(canvas, displaySize);
 
     return {
         displaySize: displaySize,
         canvas: canvas
-
     }
 }
 
