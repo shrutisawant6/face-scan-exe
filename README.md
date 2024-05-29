@@ -9,5 +9,8 @@ Factors influencing the scan:
 - Centered face within the application's frame
 - Gentle face/photo movement for detection and scanning
 
-
 Reference: face-api.js 
+
+Result(The image background has been altered, thus might not appear clear):
+
+![ScannedImage](https://github.com/shrutisawant6/face-scan-exe/assets/140047758/3b353a26-dfe9-402a-a794-c75724a9a167)
