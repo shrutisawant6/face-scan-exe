@@ -13,4 +13,4 @@ Reference: face-api.js
 
 **Result**(image background has been altered, thus might not appear clear):
 
-![ScannedImage](https://github.com/shrutisawant6/face-scan-exe/assets/140047758/3b353a26-dfe9-402a-a794-c75724a9a167)
+![FaceScanResult](https://github.com/shrutisawant6/face-scan-exe/assets/140047758/50ff6309-786b-47db-bc5e-b66405e9725e)
